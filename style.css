@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+}
+
+body{
+  margin: 10px;
+}
+
+.headDiv{
+  text-align: center;
+}
+
+.hamburgerLogo{
+  margin: 16px;
+  width: 40px;
+  float: right;
+}
+h1{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.logo{
+  float: left;
+  width: 50px;
+}
+
+nav{
+  clear: both;
+}
+
+
+@media only screen and (min-width: 413px) {
+
+  .hamburgerLogo{
+    margin: 16px;
+    width: 60px;
+    float: right;
+  }
+  h1{
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  .logo{
+    float: left;
+    width: 75px;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+
+  .hamburgerLogo{
+    margin: 16px;
+    width: 80px;
+    float: right;
+  }
+  h1{
+    font-size: 40px;
+    padding: 20px;
+  }
+
+  .logo{
+    float: left;
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+
+}
