@@ -9,31 +9,38 @@
     <header>
       <div class="headDiv">
       <img class="logo" src="logo.jpg" alt="logo"/>
-      <a>
-        <img class="hamburgerLogo" src="hamburger.jpg" alt="hamburgerLogo"/>
-      </a>
-      <h1>Pavel Parkhomey</h1>
-    </div>
-      <nav>
-        <ul class="classUL">
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+        <h1>Pavel Parkhomey</h1>
+      </div>
     </header>
-    <section id="aboutme">
+    <ul class="topnav" id="myTopnav">
+  <li><a class="active" href="#aboutme">About Me</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#resume">Resume</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="https://www.linkedin.com/in/pavel-parkhomey-599919126?trk=nav_responsive_tab_profile_pic">Linked In</a></li>
+  <li><a href="https://github.com/pavelpark">GitHub</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
 
-    </section>
-    <section id="rrojects">
 
-    </section>
-    <section id="resume">
-
-    </section>
-    <section id="contact">
-
-    </section>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    <article class="template">
+      <h3>Title</h3>
+      <p>Paragraph</p>
+    </article>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="array.js"></script>
+    <script src="calls.js"></script>
   </body>
 </html>
