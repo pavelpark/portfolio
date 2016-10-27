@@ -7,7 +7,7 @@ function Calls (options){
 
 Calls.prototype.toHtml = function() {
   var $newCalls = $('article.template').clone();
-
+  $newCalls.attr('id',this.title);
   $newCalls.find('h3').text(this.title);
   $newCalls.find('p').html(this.paragraph);
   $newCalls.removeClass('template');
