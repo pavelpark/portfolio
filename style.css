@@ -4,6 +4,7 @@
 
 body{
   margin: 10px;
+  background-color: #C1DAD6;
 }
 
 .headDiv{
@@ -21,6 +22,10 @@ h1{
   clear: both;
 }
 
+h3{
+  text-align: left;
+  font-size: 25px;
+}
 p{
   margin: 30px;
 }
@@ -28,7 +33,7 @@ p{
 ul.topnav{
   clear: both;
 }
-body {margin:0;}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -57,10 +62,38 @@ ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display: none;}
 
+#busmall{
+  width: 30%;
+}
+
+#planIt{
+  width: 30%;
+}
+
+#cookiestand{
+  width: 30%;
+}
+
 #resumepic{
   width: 50%;
 }
 
+#Projects img{
+  margin-left: 10px;
+}
+
+#Projects{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#About p{
+    width: 400px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
 @media only screen and (min-width: 413px) {
 

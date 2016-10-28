@@ -13,6 +13,7 @@ Calls.prototype.toHtml = function() {
   $newCalls.removeClass('template');
   return $newCalls;
 };
+
 portfolioArticles.forEach(function(element){
   articles.push(new Calls(element));
 });
