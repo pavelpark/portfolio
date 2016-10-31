@@ -5,7 +5,7 @@ var portfolioArticles = [
   },
   {
     title: 'Projects',
-    paragraph: '<img src=busMall.jpg id="busmall"> <img src=planit.jpg id="planIt"> <img src=cookiestand.jpg id="cookiestand">'
+    paragraph: '<p><img src=busMall.jpg id="busmall"> <img src=planit.jpg id="planIt"> <img src=cookiestand.jpg id="cookiestand"></p><p><a href="https://pavelpark.github.io/bus-mall/">Bus Mall Project</a> <a href="http://eventprotoplanit.com/index.html">Plan It Project</a> <a href="https://pavelpark.github.io/cookie-stand/index.html">Cookie Stand Project</a></p>'
   },
   {
     title: 'Resume',

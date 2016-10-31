@@ -30,6 +30,8 @@ p{
   margin: 30px;
 }
 
+/*Navigation Bar*/
+
 ul.topnav{
   clear: both;
 }
@@ -62,6 +64,8 @@ ul.topnav li a:hover {background-color: #555;}
 
 ul.topnav li.icon {display: none;}
 
+/*Project pictures and Info*/
+
 #busmall{
   width: 30%;
 }
@@ -75,6 +79,7 @@ ul.topnav li.icon {display: none;}
 }
 
 #resumepic{
+margin-left: 30px;
   width: 50%;
 }
 
@@ -88,12 +93,20 @@ ul.topnav li.icon {display: none;}
   margin: 0 auto;
 }
 
+#Projects a{
+  padding: 0 12%;
+  text-decoration: none;
+}
+
+
 #About p{
     width: 400px;
     height: 200px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+/*Media Queries*/
 
 @media only screen and (min-width: 413px) {
 
