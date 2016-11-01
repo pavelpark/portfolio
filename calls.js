@@ -14,10 +14,35 @@ Calls.prototype.toHtml = function() {
   return $newCalls;
 };
 
-portfolioArticles.forEach(function(element){
-  articles.push(new Calls(element));
-});
+// portfolioArticles.forEach(function(element){
+//   articles.push(new Calls(element));
+// });
 
 articles.forEach(function(display) {
   $('body').append(display.toHtml());
 });
+// Article Load All
+Calls.loadAll = function(inputData) {
+  inputData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  })
+  .forEach(function(ele) {
+    Calls.articles.push(new Calls(ele));
+  });
+};
+
+Calls.fetchAll = function() {
+  if (localStorage.array) {
+
+
+  } else {
+    $.getJSON('array.json', function(data, message, xhr) {
+
+      // Article.loadAll(data);
+      console.log(data);
+    });
+
+  }
+  // articleView.renderIndexPage();
+};
+Calls.fetchAll();
