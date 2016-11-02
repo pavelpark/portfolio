@@ -37,9 +37,12 @@ Calls.fetchAll = function() {
 
   } else {
     $.getJSON('array.json', function(data, message, xhr) {
-
+      data.forEach(function(section) {
+        // $('body').append(section.toHtml());
+        // section.toHtml();
+        console.log(section);
+      });
       // Article.loadAll(data);
-      console.log(data);
     });
 
   }
