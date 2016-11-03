@@ -34,12 +34,11 @@ Calls.loadAll = function(inputData) {
 Calls.fetchAll = function() {
   if (localStorage.array) {
 
-
   } else {
     $.getJSON('array.json', function(data, message, xhr) {
       data.forEach(function(section) {
-        // $('body').append(section.toHtml());
-        // section.toHtml();
+        section = new Calls(section);
+        $('body').append(section.toHtml());
         console.log(section);
       });
       // Article.loadAll(data);
