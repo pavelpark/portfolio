@@ -1,3 +1,4 @@
+'use strict';
 var articles = [];
 
 function Calls (options){
