@@ -15,9 +15,6 @@ Calls.prototype.toHtml = function() {
   return $newCalls;
 };
 
-// portfolioArticles.forEach(function(element){
-//   articles.push(new Calls(element));
-// });
 
 articles.forEach(function(display) {
   $('body').append(display.toHtml());
@@ -32,20 +29,17 @@ Calls.loadAll = function(inputData) {
   });
 };
 
-Calls.fetchAll = function() {
+(function() {
   if (localStorage.array) {
 
   } else {
-    $.getJSON('array.json', function(data, message, xhr) {
-      data.forEach(function(section) {
+    $.getJSON('array.json', function(data) {
+      data.map(function(section) {
         section = new Calls(section);
         $('body').append(section.toHtml());
         console.log(section);
       });
-      // Article.loadAll(data);
     });
-
   }
-  // articleView.renderIndexPage();
-};
-Calls.fetchAll();
+
+}());
