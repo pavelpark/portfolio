@@ -41,5 +41,4 @@ Calls.loadAll = function(inputData) {
       });
     });
   }
-
 }());
