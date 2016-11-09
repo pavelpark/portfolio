@@ -17,6 +17,7 @@ Calls.prototype.toHtml = function() {
 
 
 articles.forEach(function(display) {
+  console.log(display + ' display');
   $('body').append(display.toHtml());
 });
 // Article Load All
@@ -37,7 +38,7 @@ Calls.loadAll = function(inputData) {
       data.map(function(section) {
         section = new Calls(section);
         $('body').append(section.toHtml());
-        console.log(section);
+        console.log(section + ' sections');
       });
     });
   }
