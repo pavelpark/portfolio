@@ -5,5 +5,5 @@
     $('.eachPart').hide();
     $('#Contact').show();
   };
-  module.contact = resume;
+  module.contact = contact;
 })(window);
