@@ -15,6 +15,15 @@ Calls.prototype.toHtml = function() {
   return $newCalls;
 };
 
+$.ajax({
+  url: 'https://api.github.com/users/pavelpark/repos',
+  headers: {'Authorization': 'token ' + githubToken},
+  type: 'GET',
+  success: function (data, message, xhr) {
+    var viewData = data;
+    console.log(viewData);
+  }
+});
 
 articles.forEach(function(display) {
   console.log(display + ' display');
